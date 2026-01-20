@@ -5,6 +5,9 @@ The PDF is the schematic and the zip file contains the fabrication files.
 ## Code
 Code can be found with the Rev A of this project. https://github.com/garnerm91/Arduino_J1850VPW
 
+## BOM CHANGE!
+When I first released this project, I set R8 wrong due to a poor calculation, and I was trying to reduce the ring from L1. R8 is now 2.94K, and C7 is now 680pF. 
+
 ## Credits
 The inspiration was taken from the Macchina M2 hardware. https://github.com/macchina/m2-hardware?tab=readme-ov-file <br>
 The code is from redheadedrod: https://github.com/redheadedrod/j1850/tree/master/M2_J1850_VPW I modified it to work on the atmega328 instead of due. (I think that is what they were using). I also changed the easy_send function to be memory-safe. I removed the "test" mode because it wasn't documented in the original API; I didn't want it to confuse users. I removed pin setting for J1850 PMW on the M2 since version of the module does not support that at a hardware level <br>
